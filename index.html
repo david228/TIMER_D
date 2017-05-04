@@ -10,9 +10,7 @@ function showDate(){
   document.body.appendChild(textNode)
   textNode.textContent = "До нового года осталось " + secondsToNewYear + " секунд";
 }
-showDate();
-showDate();
-showDate();
+setTimeout(showDate, 3000)
 setTimeout(showDate, 3000)
 </script>
 </body>
