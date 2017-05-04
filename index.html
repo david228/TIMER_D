@@ -1,5 +1,7 @@
 <body>
 <script>
+var textNode = document.createTextNode("");
+document.body.appendChild(textNode)
 function showDate(){
   var date = new Date();
   var newYear = new Date('2018-1-1');
@@ -9,7 +11,5 @@ function showDate(){
   textNode.textContent = "До нового года осталось " + secondsToNewYear + " секунд";
 }
 var textNode = document.createTextNode("");
-document.body.appendChild(textNode)
-setInterval(showDate, 1000)
 </script>
 </body>
