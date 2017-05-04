@@ -6,8 +6,7 @@ function showDate(){
   var timeToNewYear = newYear - date;
   var secondsToNewYear = Math.floor(timeToNewYear / 1000);
   console.log("До нового года осталось ", secondsToNewYear, " секунд")
-  var textNode = document.createTextNode("");
-  document.body.appendChild(textNode)
+
   textNode.textContent = "До нового года осталось " + secondsToNewYear + " секунд";
 }
 setInterval(showDate, 1000)
