@@ -10,7 +10,7 @@ function showDate(){
   var minutesToNewYear = Math.floor(secondsToNewYear / 60);
   var hoursToNewYear = Math.floor(minutesToNewYear / 60);
   var daysToNewYear = Math.floor(hoursToNewYear / 24);
-  var horsToNewYearNormalized = minutesToNewYear % 60;
+  hoursToNewYear = hoursToNewYear % 24;
   console.log("До нового года осталось ", secondsToNewYear, " секунд")
  textNode.textContent = "До нового года осталось"   + daysToNewYear + " дней " + hoursToNewYear + "часов " + minutesToNewYear + "минут " + secondsToNewYear + "секунд ";
 }
