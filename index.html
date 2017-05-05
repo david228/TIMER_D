@@ -11,10 +11,7 @@ function showDate(){
   var hoursToNewYear = Math.floor(minutesToNewYear / 60);
   var daysToNewYear = Math.floor(hoursToNewYear / 24);
   console.log("До нового года осталось ", secondsToNewYear, " секунд")
-  textNode.textContent = "До нового года осталось " + secondsToNewYear + " секунд";
-  textNode.textContent = "До нового года осталось " + minutesToNewYear + " минут";
-  textNode.textContent = "До нового года осталось " + hoursToNewYear + " часов";
-  textNode.textContent = "До нового года осталось " + daysToNewYear + " дней";
+ textNode.textContent = "До нового года осталось " + secondsToNewYear + " секунд "  + minutesToNewYear + " минут " + hoursToNewYear + " часов" + daysToNewYear + " дней";
   
 }
 setInterval(showDate, 1000)
