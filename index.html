@@ -5,7 +5,7 @@
 <div id="seconds"></div>
 <script>
 var textNode = document.createTextNode("");
-document.body.appendChild(textNode)
+document.body.appendChild(textNode) 
 function showDate(){
   var date = new Date();
   var newYear = new Date('2018-1-1');
@@ -20,6 +20,8 @@ function showDate(){
   console.log("До нового года осталось ", secondsToNewYear, " секунд")
  textNode.textContent = "До нового года осталось"   + daysToNewYear + " дней " + hoursToNewYear + "часов " + minutesToNewYear + "минут " + secondsToNewYear + "секунд ";
  document.getElementById("days").innerText = hoursToNewYear;
+ document.getElementById("minutes").innerText = minutesToNewYear;
+ document.getElementById("seconds").innerText = secondsToNewYear;
 }
 setInterval(showDate, 1000)
 </script>
