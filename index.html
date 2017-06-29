@@ -1,8 +1,29 @@
-<body>
- <div id="days"></div>
-<div id="hours"></div>
-<div id="minutes"></div>
-<div id="seconds"></div>
+<body style="
+    background: darkred;
+">
+    
+<div style="
+    display: inline-block;
+    margin-left: 500;
+    font-size: 30;
+    font-family: cursive;
+    color: blue;
+">  
+До нового года осталось: <div id="days">185</div> Дней
+</div>
+<div id="clock" style="
+    display: flex;
+    margin-left: 500px;
+    margin-bottom: 100;
+    font-size: 60;
+    font-family: cursive;
+    color: darkorange;
+">
+<div id="hours">1</div>:
+<div id="minutes">33</div>:
+<div id="seconds">5</div>
+    
+    
 <script>
 var textNode = document.createTextNode("");
 document.body.appendChild(textNode) 
@@ -24,4 +45,5 @@ function showDate(){
 }
 setInterval(showDate, 1000)
 </script>
-</body>
+
+</div></body>
