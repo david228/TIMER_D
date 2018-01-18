@@ -36,7 +36,7 @@ body { background-color:#333; }
   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
-}	
+Fi}	
 </style>
 </head>
 <body style="
@@ -81,7 +81,7 @@ function showDate(){
   newYear.setHours(0);
   newYear.setDate(1);
   newYear.setMilliseconds(0);
-  newYear.setYear(newYear.getYear());
+  newYear.setYear(newYear.getFullYear());
   newYear.setSeconds(0);
   var timeToNewYear = newYear - date;
   var secondsToNewYear = Math.floor(timeToNewYear / 1000); 
