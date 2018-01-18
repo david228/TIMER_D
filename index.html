@@ -75,14 +75,14 @@ var textNode = document.createTextNode("");
 document.body.appendChild(textNode) 
 function showDate(){
   var date = new Date ();
-  var newyear = new Date ()
-  newyear.setMonth(0);
-  newyear.setMinutes(0);
-  newyear.setHours(0);
-  newyear.setDate(1);
-  newyear.setMilliseconds(0);
-  newyear.setYear(2019);
-  newyear.setSeconds(0);
+  var newYear = new Date ()
+  newYear.setMonth(0);
+  newYear.setMinutes(0);
+  newYear.setHours(0);
+  newYear.setDate(1);
+  newYear.setMilliseconds(0);
+  newYear.setYear(2019);
+  newYear.setSeconds(0);
   var timeToNewYear = newYear - date;
   var secondsToNewYear = Math.floor(timeToNewYear / 1000); 
   var minutesToNewYear = Math.floor(secondsToNewYear / 60);
