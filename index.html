@@ -74,7 +74,13 @@ var textNode = document.createTextNode("");
 document.body.appendChild(textNode) 
 function showDate(){
   var date = new Date();
-  var newYear = new Date('2019-01-01');
+  var newYear = new Date ()
+  newyear.setMonth(0);
+  newyear.setMinutes(0);
+  newyear.setHours(0);
+  newyear.setDate(1);
+  newyear.setMilliseconds(0);
+  newyear.setYear(2019);
   var timeToNewYear = newYear - date;
   var secondsToNewYear = Math.floor(timeToNewYear / 1000); 
   var minutesToNewYear = Math.floor(secondsToNewYear / 60);
