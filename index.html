@@ -81,7 +81,7 @@ function showDate(){
   newYear.setHours(0);
   newYear.setDate(1);
   newYear.setMilliseconds(0);
-  newYear.setYear(newYear.getFullYear());
+  newYear.setYear(newYear.getFullYear()+10) ;
   newYear.setSeconds(0);
   var timeToNewYear = newYear - date;
   var secondsToNewYear = Math.floor(timeToNewYear / 1000); 
